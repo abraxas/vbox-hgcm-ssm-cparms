@@ -1,0 +1,13 @@
+name: vbox-hgcm-ssm-cparms
+
+services:
+  gadget:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    init: true
+    restart: "no"
+    ports:
+      - "127.0.0.1:19210:19210"
+    labels:
+      lab: vbox-hgcm-ssm-cparms
